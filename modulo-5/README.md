@@ -2,12 +2,12 @@
 
 Objetivo: Profundizar en técnicas avanzadas y optimización.
 
-Temas clave:
+## Temas clave:
 
-Optimización de hiperparámetros (GridSearchCV, Bayesian Optimization).
+**Optimización de hiperparámetros** (GridSearchCV, Bayesian Optimization).
 
-Feature engineering y selección de características.
+**Feature engineering y selección de características.**
 
-Ensamblaje de modelos (voting, stacking).
+**Ensamblaje de modelos (voting, stacking).**
 
-Introducción a Deep Learning con TensorFlow/Keras (redes neuronales básicas).
+**Introducción a Deep Learning con TensorFlow/Keras** (redes neuronales básicas).

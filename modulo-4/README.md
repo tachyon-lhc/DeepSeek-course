@@ -2,24 +2,24 @@
 
 Objetivo: Entender fundamentos de modelos supervisados y no supervisados.
 
-Temas clave:
+## Temas clave:
 
-Modelos Supervisados:
+### Modelos Supervisados:
 
-Regresión lineal, regresión logística.
+**Regresión lineal, regresión logística.**
 
-Árboles de decisión, Random Forest, Gradient Boosting (XGBoost/LightGBM).
+**Árboles de decisión, Random Forest, Gradient Boosting** (XGBoost/LightGBM).
 
-SVM, k-NN.
+**SVM, k-NN.**
 
-Modelos No Supervisados:
+### Modelos No Supervisados:
 
-Clustering (K-Means, DBSCAN).
+**Clustering** (K-Means, DBSCAN).
 
-Detección de anomalías.
+**Detección de anomalías.**
 
-Evaluación de Modelos:
+### Evaluación de Modelos:
 
-Métricas (MSE, accuracy, precisión, recall, F1, ROC-AUC).
+**Métricas** (MSE, accuracy, precisión, recall, F1, ROC-AUC).
 
-Validación cruzada, curvas de aprendizaje.
+**Validación cruzada, curvas de aprendizaje.**

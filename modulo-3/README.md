@@ -2,12 +2,12 @@
 
 Objetivo: Preparar datos para modelos de ML.
 
-Temas clave:
+## Temas clave:
 
-Escalado de características (StandardScaler, MinMaxScaler).
+**Escalado de características** (StandardScaler, MinMaxScaler).
 
-Codificación de variables categóricas (OneHotEncoder, LabelEncoder).
+**Codificación de variables categóricas** (OneHotEncoder, LabelEncoder).
 
-Reducción de dimensionalidad (PCA, t-SNE).
+**Reducción de dimensionalidad** (PCA, t-SNE).
 
-Pipelines con scikit-learn (ColumnTransformer, Pipeline).
+**Pipelines con scikit-learn** (ColumnTransformer, Pipeline).

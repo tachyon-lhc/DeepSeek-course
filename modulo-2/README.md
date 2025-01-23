@@ -2,16 +2,16 @@
 
 Objetivo: Comunicar insights mediante gráficos efectivos.
 
-Temas clave:
+## Temas clave:
 
-Matplotlib:
+### Matplotlib:
 
-Customización de figuras (subplots, estilos, anotaciones).
+**Customización de figuras** (subplots, estilos, anotaciones).
 
-Seaborn:
+### Seaborn:
 
-Gráficos estadísticos (heatmaps, pairplots, boxplots).
+**Gráficos estadísticos** (heatmaps, pairplots, boxplots).
 
-Plotly (opcional):
+### Plotly (opcional):
 
-Gráficos interactivos y dashboards.
+**Gráficos interactivos y dashboards.**

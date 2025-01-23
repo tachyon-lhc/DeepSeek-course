@@ -2,12 +2,12 @@
 
 Objetivo: Aplicar todo lo aprendido en proyectos realistas.
 
-Proyectos sugeridos:
+## Proyectos sugeridos:
 
-Análisis de sentimientos en redes sociales (NLP básico con nltk/spaCy).
+**Análisis de sentimientos en redes sociales** (NLP básico con nltk/spaCy).
 
-Sistema de detección de fraudes (datos desbalanceados).
+**Sistema de detección de fraudes** (datos desbalanceados).
 
-Predicción de series temporales (ej: ventas, BTC).
+**Predicción de series temporales** (ej: ventas, BTC).
 
-Clasificación de imágenes médicas (transfer learning con ResNet).
+**Clasificación de imágenes médicas** (transfer learning con ResNet).

@@ -2,12 +2,12 @@
 
 Objetivo: Llevar modelos a entornos reales.
 
-Temas clave:
+## Temas clave:
 
-Serialización de modelos (pickle, joblib).
+**Serialización de modelos** (pickle, joblib).
 
-APIs con Flask/FastAPI.
+**APIs con Flask/FastAPI.**
 
-Docker básico para empaquetar aplicaciones.
+**Docker básico para empaquetar aplicaciones.**
 
-Despliegue en la nube (AWS/GCP/Heroku).
+**Despliegue en la nube** (AWS/GCP/Heroku).
