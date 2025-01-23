@@ -2,7 +2,7 @@
 
 Objetivo: Fortalecer conceptos avanzados de Python necesarios para ML.
 
-Temas clave:
+## Temas clave:
 
 Programación orientada a objetos (clases, herencia, decoradores).
 
