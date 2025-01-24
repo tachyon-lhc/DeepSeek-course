@@ -1,0 +1,5 @@
+Clases: Plantillas para crear objetos con atributos (datos) y métodos (funciones).
+
+Herencia: Permite reutilizar código de una clase padre en una clase hija.
+
+Decoradores: Funciones que modifican el comportamiento de otras funciones o métodos.
