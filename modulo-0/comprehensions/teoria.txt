@@ -1,0 +1,11 @@
+Comprehensions son una forma concisa de crear listas, diccionarios o conjuntos en Python.
+
+Son más eficientes y legibles que los bucles tradicionales.
+
+Existen tres tipos:
+
+List Comprehensions: Para crear listas.
+
+Dict Comprehensions: Para crear diccionarios.
+
+Set Comprehensions: Para crear conjuntos.
