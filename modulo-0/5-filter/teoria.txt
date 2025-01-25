@@ -1,0 +1,19 @@
+¿Qué es filter?
+
+  filter es una función incorporada en Python que filtra los elementos de un iterable (lista, tupla, etc.) basados en una condición.
+
+  Devuelve un objeto filter, que es un iterador. Puedes convertirlo a una lista, tupla, etc.
+
+Sintaxis:
+
+  >> filter(función, iterable)
+
+  función: La función que define la condición de filtrado. Devuelve True o False.
+
+  iterable: La lista, tupla, etc., cuyos elementos se filtrarán.
+
+Características:
+
+  No modifica el iterable original, sino que devuelve un nuevo iterador con los elementos que cumplen la condición.
+
+  Es útil para seleccionar elementos específicos de una lista sin necesidad de bucles explícitos.
