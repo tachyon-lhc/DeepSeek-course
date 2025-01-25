@@ -1,0 +1,22 @@
+¿Qué es una función lambda?
+
+Una función lambda es una función anónima (sin nombre) que se define en una sola línea.
+
+Es útil para operaciones simples que no requieren una función definida con def.
+
+Sintaxis:
+
+  lambda argumentos: expresión
+
+argumentos: Los parámetros que recibe la función.
+
+expresión: La operación que realiza la función. El resultado de esta expresión es lo que devuelve la función.
+argumentos: expresión
+
+Características:
+
+No tiene nombre (es anónima).
+
+Puede tener cualquier número de argumentos, pero solo una expresión.
+
+Se usa comúnmente con funciones como map, filter y reduce.
