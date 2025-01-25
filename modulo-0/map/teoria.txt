@@ -1,0 +1,21 @@
+¿Qué es map?
+
+  map es una función incorporada en Python que aplica una función a todos los elementos de un iterable (lista, tupla, etc.).
+
+  Devuelve un objeto map, que es un iterador. Puedes convertirlo a una lista, tupla, etc.
+
+
+Sintaxis:
+
+        map(función, iterable)
+
+  función: La función que se aplicará a cada elemento del iterable.
+
+  iterable: La lista, tupla, etc., cuyos elementos se transformarán.
+
+
+Características:
+
+  No modifica el iterable original, sino que devuelve un nuevo iterador con los resultados.
+
+  Es útil para aplicar operaciones a todos los elementos de una lista sin necesidad de bucles explícitos.
