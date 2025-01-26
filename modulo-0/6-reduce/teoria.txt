@@ -1,0 +1,23 @@
+¿Qué es reduce?
+
+  reduce es una función del módulo functools que aplica una función acumulativa a los elementos de un iterable, reduciéndolos a un solo valor.
+
+  Es útil para operaciones como sumar todos los elementos de una lista, calcular el producto, encontrar el máximo, etc.
+
+
+Sintaxis:
+
+    >> reduce(función, iterable[, inicializador])
+
+  función: La función que define la operación acumulativa. Debe tomar dos argumentos.
+
+  iterable: La lista, tupla, etc., cuyos elementos se reducirán.
+
+  inicializador (opcional): Un valor inicial para la operación acumulativa.
+
+
+Características:
+
+  -No modifica el iterable original, sino que devuelve un solo valor.
+
+  -Es útil para operaciones que requieren acumulación de resultados.
