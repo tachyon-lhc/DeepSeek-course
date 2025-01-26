@@ -1,0 +1,10 @@
+itertools:
+
+  Es un módulo que proporciona funciones para trabajar con iteradores.
+  Incluye herramientas para crear y manipular iteradores de manera eficiente.
+  Algunas funciones útiles: permutations, combinations, product, cycle, chain.
+
+collections:
+
+  Es un módulo que proporciona estructuras de datos especializadas.
+  Algunas clases útiles: defaultdict, Counter, deque, namedtuple.

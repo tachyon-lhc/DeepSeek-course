@@ -2,7 +2,7 @@
 
 Objetivo: Fortalecer conceptos avanzados de Python necesarios para ML.
 
-## Temas clave:
+## Temas clave
 
 **Programación orientada a objetos** (clases, herencia, decoradores).
 
@@ -15,3 +15,4 @@ Objetivo: Fortalecer conceptos avanzados de Python necesarios para ML.
 **Uso avanzado de librerías estándar** (itertools, collections).
 
 **Introducción a concurrencia** (opcional: multiprocessing, threading).
+

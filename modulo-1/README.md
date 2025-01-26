@@ -2,9 +2,9 @@
 
 Objetivo: Dominar herramientas esenciales para manipulación de datos.
 
-## Temas clave:
+## Temas clave
 
-### NumPy:
+### NumPy
 
 **Arrays multidimensionales, operaciones vectorizadas.**
 
@@ -12,7 +12,7 @@ Objetivo: Dominar herramientas esenciales para manipulación de datos.
 
 **Álgebra lineal** (productos matriciales, descomposiciones).
 
-### Pandas:
+### Pandas
 
 **DataFrames y Series** (creación, manipulación).
 
@@ -21,3 +21,4 @@ Objetivo: Dominar herramientas esenciales para manipulación de datos.
 **Manejo de datos faltantes y fechas.**
 
 **Optimización con pandas.eval().**
+
