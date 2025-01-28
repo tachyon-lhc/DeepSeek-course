@@ -1,0 +1,65 @@
+1. Conceptos clave
+
+  Procesos y subprocesos:
+
+      Procesos: Ejecuciones independientes que corren en diferentes espacios de memoria. Usan múltiples núcleos del procesador.
+
+      Subprocesos (threads): Ejecuciones ligeras dentro de un mismo proceso, que comparten el mismo espacio de memoria.
+
+  Paralelismo vs Concurrencia:
+
+      Paralelismo: Tareas se ejecutan simultáneamente en múltiples núcleos. Usado por multiprocessing.
+
+      Concurrencia: Tareas múltiples parecen ejecutarse al mismo tiempo al alternar entre ellas. Usado por threading.
+      Global Interpreter Lock (GIL):
+
+  Global Interpreter Lock (GIL):
+
+      En Python, el GIL restringe que solo un subproceso sea ejecutado a la vez en un intérprete, incluso en sistemas multinúcleo.
+
+      Multiprocessing esquiva el GIL al crear procesos separados, mientras que Threading está limitado por él.
+
+
+2. Multiprocessing
+
+  Características principales
+ 
+      Diseñado para usar varios núcleos del CPU.
+
+      Cada proceso tiene su espacio de memoria independiente.
+
+      Ideal para tareas de computación intensiva.
+
+  Componentes principales:
+
+      Process: Clase para crear procesos independientes.
+
+      Pool: Ejecuta un conjunto de tareas en paralelo.
+
+      Colas y tuberías: Permiten la comunicación entre procesos.
+
+      Lock y Semaphore: Controlan el acceso concurrente a recursos compartidos.
+
+
+3. Threading
+
+  Características principales
+
+      Diseñado para tareas de E/S (como descargar archivos, leer/escribir en redes).
+
+      Más ligero que los procesos.
+
+      Ideal para tareas donde el tiempo de espera (latencia) domina sobre el procesamiento.
+
+  Componentes principales:
+
+      Thread: Clase para crear subprocesos.
+
+      Locks:
+            Previenen condiciones de carrera.
+
+            Sincronizan subprocesos.
+
+  Colas: Facilitan la comunicación segura entre subprocesos.
+
+##########################################################################################
