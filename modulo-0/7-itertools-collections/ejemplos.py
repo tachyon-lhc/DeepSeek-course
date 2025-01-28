@@ -24,7 +24,7 @@ print(producto)  # Output: [('rojo', 'S'), ('rojo', 'M'), ('verde', 'S'), ('verd
 '''
                 Ejemplos de collections
 '''
-import collections
+from collections import defaultdict, Counter, deque
 
 # Ejemplo 1: Usar defaultdict
 frutas = ['manzana', 'banana', 'naranja', 'manzana', 'banana']
