@@ -1,0 +1,37 @@
+Proyecto: Simulación de un sistema de ventas
+
+  Objetivos:
+
+    Crear un sistema que simule la gestión de productos, clientes y ventas, integrando los conceptos
+    avanzados de Python. El sistema debe permitir realizar las siguientes operaciones:
+
+      1-Registrar productos (nombre, precio).
+      2-Registrar clientes (nombre, edad).
+      3-Simular ventas aleatorias entre clientes y productos.
+      4-Generar y guardar reportes (ventas, clientes y productos) en diferentes formatos (JSON, CSV).
+      5-Utilizar concurrencia para acelerar procesos como generación de datos o cálculos.
+
+  Requisitos técnicos:
+
+    1-Programación orientada a objetos (POO):
+
+        Crear clases Producto, Cliente y Venta.
+        Utilizar métodos para encapsular lógica como la simulación de ventas.
+
+    2-Manejo de archivos:
+
+        Guardar datos en archivos JSON y CSV.
+        Leer datos desde archivos para inicializar el sistema.
+
+    3-Comprehensions:
+
+        Usar listas, conjuntos y diccionarios por comprensión para procesar datos eficientemente.
+
+    4-Funciones avanzadas:
+
+        Usar funciones como map, filter o reduce para procesar listas.
+
+    5-Concurrencia:
+
+        Utilizar threading y multiprocessing para manejar grandes volúmenes de datos o simulaciones paralelas.
+
