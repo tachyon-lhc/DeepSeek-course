@@ -1,11 +1,9 @@
 import csv, json, collections, threading
 
-class Data():
-    def __init__(self, file_clients_name, file_products_name):
+class Client:
+    def __init__(self, file_clients_name):
         self.file_clients_name = file_clients_name
-        self.file_products_name = file_products_name
         self.dataClients = None
-        self.dataProducts = None
 
     def readClients(self):
         if self.dataClients is None:
@@ -18,6 +16,21 @@ class Data():
                 print('Archivo no encontrado')
 
         return self.dataClients
+    
+    def showClients(self):
+        if self.dataClients is None:
+            self.readClients()
+
+        data = self.dataClients
+        i = 1
+        for row in data:
+            print(f"{i} - Nombre: {row['nombre']} | Edad: {row['edad']}")
+            i += 1
+
+class Product:
+    def __init__(self, file_products_name):
+        self.file_products_name = file_products_name
+        self.dataProducts = None
 
     def readProducts(self):
         if self.dataProducts is None:
@@ -31,16 +44,6 @@ class Data():
 
         return self.dataProducts
     
-    def showClients(self):
-        if self.dataClients is None:
-            self.readClients()
-
-        data = self.dataClients
-        i = 1
-        for row in data:
-            print(f"{i} - Nombre: {row['nombre']} | Edad: {row['edad']}")
-            i += 1
-
     def showProducts(self):
         if self.dataProducts is None:
             self.readProducts()
@@ -51,27 +54,51 @@ class Data():
             print(f"{i} - Nombre: {row['nombre']} | Precio: {row['precio']}")
             i += 1
 
-class Ventas(Data):
-    def __init__(self, file_ventas_name):
-        super().__init__(file_ventas_name)
-        self.ventas = {}
+class Ventas(Client, Product):
+    def __init__(self, file_clients_name, file_products_name, file_ventas_name):
+        Client.__init__(self, file_clients_name)
+        Product.__init__(self, file_products_name)
+        self.file_ventas_name = file_ventas_name
+        self.ventas = []
 
     def completeSale(self, cliente, producto):
-        clientes = self.dataClients
-        productos = self.dataProducts
+        data_clients = self.readClients()
+        data_products = self.readProducts()
+
+        clientFinder = any(row['nombre'] == cliente for row in data_clients)
+        if not clientFinder:
+            print(f'El cliente {cliente}, no fue encontrado.')
+            return
+
+        productFinder = None
+        for row in data_products:
+            if row['nombre'] == producto:
+                productFinder = row
+                break
+        
+        if productFinder is None:
+            print(f'Producto {producto}, no fue encontrado.')
+            return
+
+        self.ventas.append({'cliente': cliente, 'producto': producto})
+        print(f"Venta completada para el cliente {cliente} con el producto {producto}")
+        print(self.ventas)
 
         
-
-
-
 file_clients = 'archivos/clientes.csv'
 file_products = 'archivos/productos.csv'
+file_ventas = 'archivos/ventas.csv'
 
-MyArch = Data(file_clients, file_products)
+MyClients = Client(file_clients)
+MyProducts = Product(file_products)
 
-data_clients = MyArch.readClients()
-data_products = MyArch.readProducts()
+data_clients = MyClients.readClients()
+data_products = MyProducts.readProducts()
 
-MyArch.showClients()
+MyClients.showClients()
 print()
-MyArch.showProducts()
+MyProducts.showProducts()
+print()
+MyVentas = Ventas(file_clients, file_products, file_ventas)
+MyVentas.completeSale('Juan', 'silla')
+MyVentas.completeSale('Pedro', 'mesa')
