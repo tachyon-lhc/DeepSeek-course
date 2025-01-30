@@ -1,0 +1,8 @@
+{
+    "ventas": [
+        {
+            "cliente": "Juan",
+            "producto": "silla"
+        }
+    ]
+}

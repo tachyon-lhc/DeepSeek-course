@@ -1,13 +1,7 @@
 nombre,precio
-lampara,30
 auriculares,50
-televisor,200
 computadora,800
 telefono,600
-silla,40
-mesa,100
-cama,300
-ropero,250
 zapatos,70
 camisa,50
 pantalon,80
@@ -18,3 +12,6 @@ cuaderno,10
 goma,2
 regla,3
 mochila,40
+carpeta,300
+linterna,30
+silla,300
