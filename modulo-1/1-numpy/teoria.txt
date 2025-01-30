@@ -1,0 +1,19 @@
+1. Teoría Breve:
+
+  NumPy:
+
+      Es una librería de Python para computación numérica.
+
+      Proporciona un objeto de array multidimensional (ndarray) que es más eficiente que las listas de Python para operaciones numéricas.
+
+      Incluye funciones para operaciones matemáticas, álgebra lineal, estadística, y más.
+
+  Conceptos Clave:
+
+      Array: Estructura de datos que almacena elementos del mismo tipo.
+
+      Shape: Forma del array (número de filas, columnas, etc.).
+
+      Indexing y Slicing: Acceder y modificar elementos del array.
+
+      Operaciones Vectorizadas: Operaciones que se aplican a todos los elementos del array sin

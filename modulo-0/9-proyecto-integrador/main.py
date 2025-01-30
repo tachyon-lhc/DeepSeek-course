@@ -92,7 +92,6 @@ class Product:
         print(f'Producto {name} no encontrado')
         return
 
-
 class Ventas(Client, Product):
     def __init__(self, file_clients_name, file_products_name, file_ventas_name):
         Client.__init__(self, file_clients_name)
