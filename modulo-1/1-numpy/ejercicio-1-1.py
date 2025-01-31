@@ -5,7 +5,7 @@ Ejercicio 1: Crear un Array y Realizar Operaciones:
         Crea un array de 10 elementos con valores del 0 al 9.
         Multiplica cada elemento por 3 y resta 5.
 '''
-array_1 = np.array([i for i in range(10)])
+array_1 = np.arange(10)
 operation_1 = (array_1*3 -5)
 
 
@@ -38,7 +38,7 @@ Ejercicio 3: Álgebra Lineal
 '''
 A = np.array([[1, 2], [3, 4]])
 B = np.array([[5, 6], [7, 8]])
-productMatrix = np.matmul(A, B)
+productMatrix = A @ B
 
 def main():
     print(f"De la lista{array_1} cada elemento * 3 -5: {operation_1}\n")
