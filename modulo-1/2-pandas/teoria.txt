@@ -1,0 +1,20 @@
+Pandas:
+
+    Es una librería de Python para manipulación y análisis de datos.
+
+    Proporciona estructuras de datos como Series (una columna) y DataFrames (una tabla).
+
+    Es especialmente útil para trabajar con datos estructurados, como CSV, Excel, SQL, etc.
+
+
+Conceptos Clave:
+
+    - Series: Una columna de datos con un índice.
+
+    - DataFrame: Una tabla con filas y columnas, similar a una hoja de cálculo.
+
+    - Manejo de Datos: Carga, filtrado, agrupación, combinación, etc.
+
+    - Datos Faltantes: Identificación y manejo de valores nulos.
+
+    - Fechas: Manipulación de datos temporales.
