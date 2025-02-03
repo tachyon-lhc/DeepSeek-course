@@ -18,3 +18,39 @@ Conceptos Clave:
     - Datos Faltantes: Identificación y manejo de valores nulos.
 
     - Fechas: Manipulación de datos temporales.
+
+1. Ordenamiento de DataFrames
+
+  Pandas nos permite ordenar los datos de un DataFrame utilizando el método sort_values().
+
+  Sintaxis básica:
+                  df.sort_values(by='columna', ascending=True)
+
+      by: La columna por la cual queremos ordenar.
+
+      ascending: True para orden ascendente, False para descendente.
+
+2. Resumen y Estadísticas
+
+    Existen métodos que permiten obtener información resumida del DataFrame:
+
+        - min() y max(): Encuentran el valor mínimo y máximo de una columna.
+        - sum(): Suma de los valores.
+        - describe(): Proporciona un resumen estadístico (media, desviación estándar, percentiles, etc.).
+
+      Ejemplo:
+
+          >> precio_min = df['Precio'].min()
+          >> precio_max = df['Precio'].max()
+          >> total_stock = df['stock'].sum()
+
+3. Índices y Selección de Datos
+
+  idxmax() e idxmin(): Devuelven el índice de la fila donde se encuentra el valor máximo o mínimo, respectivamente.
+
+      Por ejemplo:
+                  >> indice_precio_max = df['Precio'].idxmax()
+                  >> producto_caro = df.loc[indice_precio_max, 'Nombre']
+
+        - loc[]: Se usa para acceder a filas o columnas por etiquetas.
+        - iloc[]: Se usa para acceder por posición entera.
