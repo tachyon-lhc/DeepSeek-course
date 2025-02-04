@@ -54,3 +54,31 @@ Conceptos Clave:
 
         - loc[]: Se usa para acceder a filas o columnas por etiquetas.
         - iloc[]: Se usa para acceder por posición entera.
+
+4. Merge (Join) de DataFrames
+
+  El método pd.merge() te permite combinar dos DataFrames utilizando una o más columnas en común.
+
+  Ejemplo:
+          >> df_merge = pd.merge(df_productos, df_descuentos, on='categoria', how='left')
+      
+     Esto unirá ambos DataFrames basándose en la columna categoria. Se usa how='left' para conservar todos los productos, 
+     aunque algún producto no tenga descuento asignado (en cuyo caso, el descuento será NaN).
+
+5. Aplicar Operaciones a Columnas
+
+  Una vez unido el DataFrame, puedes calcular una nueva columna usando operaciones vectorizadas o la función apply().
+
+  Ejemplo vectorizado:
+          >> df_merge['Precio_Final'] = df_merge['Precio'] * (1 - df_merge['Descuento'] / 100)
+
+6. Ordenamiento y Agrupación
+
+  Para ordenar el DataFrame, usa df.sort_values(by='Precio_Final').
+  Para agrupar los datos, utiliza groupby() y luego las funciones de agregación como sum() o mean().
+
+  Ejemplo:
+           >> resumen = df_merge.groupby('categoria').agg(
+           >>     Stock_Total=('Stock', 'sum'),
+           >>     Precio_Promedio_Final=('Precio_Final', 'mean')
+           >> )
