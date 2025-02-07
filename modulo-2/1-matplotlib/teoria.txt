@@ -1,0 +1,15 @@
+¿Qué es Matplotlib?
+
+  Es la librería de visualización más básica y versátil de Python. Permite generar gráficos de línea, dispersión, histogramas, etc.
+
+Customización de Figuras:
+
+Subplots: Permiten crear múltiples gráficos en una misma figura.
+
+   >> fig, ax = plt.subplots(nrows=2, ncols=2)  # 2x2 grid
+
+Estilos: Puedes cambiar el estilo global (por ejemplo, 'ggplot', 'seaborn') o personalizar colores, marcadores y líneas.
+
+    >> plt.style.use('seaborn-darkgrid')
+
+Anotaciones: Con plt.annotate() puedes resaltar puntos importantes en el gráfico.
