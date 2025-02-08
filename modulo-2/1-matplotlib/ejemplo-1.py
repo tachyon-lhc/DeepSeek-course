@@ -18,5 +18,3 @@ plt.annotate('Máximo', xy=(np.pi/2, 1), xytext=(np.pi/2+1, 0.8),
 
 # Guardar la figura en un archivo
 plt.savefig('./tmp/grafico_seno.png')
-
-
