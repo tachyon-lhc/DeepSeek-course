@@ -3,7 +3,7 @@
   - Seaborn es una biblioteca de visualización de datos en Python construida sobre Matplotlib.
 
   - Su principal ventaja es que provee estilos visuales más atractivos y funciones de alto nivel 
-  para crear gráficos estadísticos con pocas líneas de código.
+    para crear gráficos estadísticos con pocas líneas de código.
 
 Principales características:
 
