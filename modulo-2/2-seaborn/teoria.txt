@@ -1,0 +1,39 @@
+¿Qué es Seaborn?
+
+  - Seaborn es una biblioteca de visualización de datos en Python construida sobre Matplotlib.
+
+  - Su principal ventaja es que provee estilos visuales más atractivos y funciones de alto nivel 
+  para crear gráficos estadísticos con pocas líneas de código.
+
+Principales características:
+
+  Estética Mejorada:
+
+      Tiene estilos y paletas de colores predefinidos que mejoran la apariencia de los gráficos 
+      sin necesidad de mucha personalización.
+
+  Visualización de Distribuciones y Relaciones:
+
+      Distribución de Variables: Permite visualizar histogramas, diagramas de densidad (KDE) y gráficos de violín.
+
+      Gráficos de Relaciones:
+
+        - Scatter plots: Con sns.scatterplot para visualizar la relación entre dos variables.
+
+        - Pairplots: Con sns.pairplot para ver las relaciones de cada par de variables en un DataFrame.
+
+        - Jointplots: Combina un scatter plot con histogramas o KDE de las distribuciones marginales.
+
+  Gráficos Categóricos:
+
+      - Boxplots: Para visualizar la distribución de una variable numérica por categorías.
+
+      - Violin Plots: Similar a los boxplots pero mostrando la densidad de los datos.
+
+      - Barplots: Para comparar medias (u otras estadísticas) entre categorías.
+
+  Heatmaps:
+
+      Muy útiles para visualizar matrices de correlación o cualquier matriz de datos, donde el color 
+      indica la magnitud de los valores.
+
