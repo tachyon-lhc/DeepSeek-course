@@ -17,4 +17,3 @@ sns.pairplot(df_pair, hue='Categoría', diag_kind='kde')
 plt.suptitle('Pairplot de Variables', y=1.02)
 plt.savefig('./tmp/pairplot.png')
 print(df_pair)
-
