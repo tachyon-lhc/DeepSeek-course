@@ -2,7 +2,7 @@
 
 Objetivo: Preparar datos para modelos de ML.
 
-## Temas clave:
+## Temas clave
 
 **Escalado de características** (StandardScaler, MinMaxScaler).
 
@@ -11,3 +11,4 @@ Objetivo: Preparar datos para modelos de ML.
 **Reducción de dimensionalidad** (PCA, t-SNE).
 
 **Pipelines con scikit-learn** (ColumnTransformer, Pipeline).
+

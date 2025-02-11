@@ -1,0 +1,49 @@
+1.1 Escalado de Características
+
+    ¿Por qué escalar?
+      Las características de distintos rangos pueden afectar negativamente al aprendizaje de un modelo.
+      El escalado normaliza los datos para que tengan una distribución comparable.
+
+    StandardScaler:
+      Resta la media y divide entre la desviación estándar. Los datos resultantes tienen media 0 y varianza 1.
+
+    MinMaxScaler:
+      Transforma los datos para que se encuentren en un rango dado, generalmente [0, 1].
+
+1.2 Codificación de Variables Categóricas
+
+    LabelEncoder:
+      Convierte cada valor de una variable categórica en un entero. Útil para variables ordinales o para algoritmos
+      que pueden interpretar números, pero puede inducir un orden no deseado.
+
+    OneHotEncoder:
+      Transforma variables categóricas en un conjunto de variables binarias (dummy variables).
+      Cada categoría se representa con una columna y un valor 0/1.
+
+1.3 Reducción de Dimensionalidad
+
+    PCA (Análisis de Componentes Principales):
+
+      Técnica lineal que transforma el conjunto de datos a un nuevo sistema de coordenadas
+      en el que las primeras componentes conservan la mayor varianza.
+
+    - Se utiliza para reducir el número de variables manteniendo la mayor parte de la información.
+
+    t-SNE (t-Distributed Stochastic Neighbor Embedding):
+
+      Técnica no lineal que se utiliza principalmente para visualización en 2D o 3D.
+
+    - Muy útil para explorar la estructura de datos complejos y de alta dimensionalidad.
+
+1.4 Pipelines con scikit-learn
+
+    Pipeline:
+      Permite encadenar transformaciones y modelos en una secuencia. Esto facilita la validación cruzada,
+      el ajuste de parámetros y la replicación del proceso.
+
+    ColumnTransformer:
+      Permite aplicar diferentes transformaciones a distintas columnas de un DataFrame.
+      Por ejemplo, aplicar escalado a variables numéricas y codificación a variables categóricas,
+      en una única estructura.
+
+
