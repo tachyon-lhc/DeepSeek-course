@@ -1,7 +1,7 @@
 # Ejemplo 4: Uso de Pipelines con ColumnTransformer
 import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 from sklearn.pipeline import Pipeline
 
 # Crear DataFrame de ejemplo
@@ -21,7 +21,7 @@ cat_cols = ["departamento"]
 # Crear ColumnTransformer
 ct = ColumnTransformer(
     transformers=[
-        ("num", StandardScaler(), num_cols),
+        ("num", MinMaxScaler(), num_cols),
         ("cat", OneHotEncoder(), cat_cols),
     ]
 )

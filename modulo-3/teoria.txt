@@ -31,9 +31,23 @@
 
     t-SNE (t-Distributed Stochastic Neighbor Embedding):
 
-      Técnica no lineal que se utiliza principalmente para visualización en 2D o 3D.
+      Es una técnica no lineal de reducción de dimensionalidad que es especialmente útil
+      para la visualización de datos de alta dimensión.
 
-    - Muy útil para explorar la estructura de datos complejos y de alta dimensionalidad.
+      Ventajas:
+          Preserva la estructura local de los datos, lo que significa que puntos que estaban cerca
+          en el espacio original tienden a permanecer cerca en el espacio reducido.
+          Es ideal para visualizar clusters o patrones en 2D o 3D.
+
+      Desventajas:
+          No es determinista (a menos que fijes una semilla aleatoria).
+          Es computacionalmente costoso para conjuntos de datos muy grandes.
+
+      Funcionamiento básico:
+          t-SNE calcula similitudes entre puntos en el espacio original y luego intenta conservar 
+          esas similitudes en el espacio reducido. El resultado se suele visualizar en un gráfico de dispersión.
+
+StandardScaler
 
 1.4 Pipelines con scikit-learn
 
