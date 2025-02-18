@@ -31,3 +31,5 @@ plt.scatter(df_tsne["Dim-1"], df_tsne["Dim-2"], c="red", alpha=0.6)
 plt.xlabel("Dimension 1")
 plt.ylabel("Dimension 2")
 plt.savefig("./tmp/tsne.png")
+
+plt.show()
