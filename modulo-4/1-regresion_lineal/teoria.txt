@@ -1,0 +1,25 @@
+1. Teoría: Conceptos Básicos de Regresión Lineal
+
+¿Qué es la Regresión Lineal?
+
+  - Es un modelo supervisado utilizado para predecir variables continuas (ej: precios, temperaturas).
+
+  - Busca encontrar la relación lineal entre variables independientes (X) y una variable dependiente (y).
+
+  - Su ecuación básica es:
+                           y = β₀ + β₁X + ϵ
+
+    donde:
+          y: Variable objetivo (a predecir).
+          X: Variable predictora.
+          β₀: Intercepto.
+          β₁: Coeficiente de la variable predictora.
+          ϵ: Error residual.
+
+¿Cómo funciona?
+  - El modelo ajusta los parámetros (β₀, β₁) para minimizar el error entre las predicciones y los valores reales.
+  - El error se mide comúnmente con la Suma de Cuadrados de los Residuos (RSS) o el Error Cuadrático Medio (MSE).
+
+¿Cuándo usarla?
+  - Cuando la relación entre variables sea lineal.
+  - Para problemas de predicción de valores numéricos.
