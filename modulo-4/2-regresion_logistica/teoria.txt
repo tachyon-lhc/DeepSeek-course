@@ -1,0 +1,23 @@
+Teoría: Conceptos Básicos de Regresión Logística
+
+¿Qué es la Regresión Logística?
+
+  - Es un modelo supervisado para clasificación binaria (ej: spam/no spam, cáncer/sano).
+
+  - Predice la probabilidad de pertenencia a una clase usando
+
+    la función logística (sigmoide): P(y=1 | X) = 1 / (1 + e^(- (β₀ + β₁X)) )
+
+  - La salida es una probabilidad entre 0 y 1, que se discretiza para tomar decisiones.
+
+¿Cómo funciona?
+
+  - Maximiza la verosimilitud de los datos, ajustando los parámetros para que las predicciones se acerquen a las etiquetas reales.
+
+  - Utiliza el coste logarítmico (log loss) como función de pérdida.
+
+¿Cuándo usarla?
+
+  - Para problemas de clasificación binaria.
+
+  - Cuando se requiera probabilidad en lugar de una etiqueta.
