@@ -12,7 +12,8 @@ Teoría: Conceptos Básicos de Regresión Logística
 
 ¿Cómo funciona?
 
-  - Maximiza la verosimilitud de los datos, ajustando los parámetros para que las predicciones se acerquen a las etiquetas reales.
+  - Maximiza la verosimilitud de los datos, ajustando los parámetros
+    para que las predicciones se acerquen a las etiquetas reales.
 
   - Utiliza el coste logarítmico (log loss) como función de pérdida.
 
