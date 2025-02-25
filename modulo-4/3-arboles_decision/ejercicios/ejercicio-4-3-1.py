@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 file_path = "~/workspace/deepseek-python/DeepSeek-course/modulo-4/datasets/WineQT.csv"
 df = pd.read_csv(file_path)
 
-X = df.iloc[:, :-2]
-y = df.iloc[:, -2]
+X = df.drop(columns=["Id", "quality"])
+y = df["quality"]
 
 feature_names = X.columns
 labels = np.unique(y)
