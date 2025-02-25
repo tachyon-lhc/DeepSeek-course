@@ -1,0 +1,27 @@
+1. Teoría: Conceptos Básicos de Árboles de Decisión
+
+¿Qué son los Árboles de Decisión?
+
+    Son modelos de Machine Learning que usan una estructura jerárquica para tomar decisiones. 
+    Cada nodo interno representa una condición sobre una característica, 
+    cada rama representa una decisión, y cada hoja representa una etiqueta de 
+    clase o un valor de regresión.
+
+¿Cómo funcionan?
+
+    - Los árboles se construyen de forma greedy, seleccionando en cada paso 
+      la característica que mejor divide los datos. La "calidad" de la divisón 
+      se mide mediante métricas como:
+
+          * Índice Gini: Mide la impureza del conjunto en un nodo. Se busca maximizar la pureza de cada nodo emergente.
+
+          * Entropía: Medida de la incertidumbre en un nodo. La ganancia de información (reducción de entropía) 
+                      se usa para seleccionar la mejor división.
+
+Ventajas:
+          - Interpretabilidad: Cada decisión se puede rastrear con claridad.
+          - Manejo de características mixtas: Acepta tanto características numéricas como categóricas.
+
+Desventajas:
+          - Sobreajuste: Los árboles profundos pueden memorizar el ruido del conjunto de entrenamiento.
+          - Inestabilidad: Pequeños cambios en los datos pueden derivar en árboles muy diferentes.
