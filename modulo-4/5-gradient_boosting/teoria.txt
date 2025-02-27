@@ -1,0 +1,36 @@
+Teoría: Conceptos Básicos de Gradient Boosting
+
+¿Qué es Gradient Boosting?
+
+    Es un algoritmo de boosting que combina múltiples clasificadores 
+    débiles (típicamente árboles de decisión) para crear un clasificador fuerte. 
+    A diferencia de los Random Forest, que ensamblan modelos de manera paralela, 
+    el gradient boosting los construye secuencialmente, corrigiendo los errores del modelo anterior.
+
+¿Cómo Funciona?
+
+    - Inicialización:
+        Comienza con una predicción inicial, usualmente la media de las etiquetas del conjunto de entrenamiento.
+
+    - Iteración:
+
+        1. En cada iteración, entrena un nuevo clasificador débil (árbol de decisión) para predecir 
+           los residuales (errores) del modelo anterior.
+
+        2. Combina la predicción del nuevo clasificador con las predicciones anteriores mediante 
+        pesos (tasas de aprendizaje), generando una predicción actualizada.
+
+    - Predicción:
+        La predicción final es una suma ponderada de las predicciones de todos los clasificadores débiles.
+
+¿Por Qué Es Efectivo?
+
+    - Reducción del Sesgo: Los clasificadores posteriores se enfocan en los errores de los anteriores, reduciendo gradualmente el sesgo.
+
+    - Flexibilidad: Puede aplicarse a una variedad de funciones de pérdida (Log Loss, MSE, etc.).
+
+Comparación con Random Forest
+
+    - Random Forest: Modelos entrenados en paralelo, sin considerar errores previos. Menor riesgo de sobreajuste.
+
+    - Gradient Boosting: Modelos entrenados secuencialmente, enfocando en errores. Pérdida de robustez si no se regulariza.
