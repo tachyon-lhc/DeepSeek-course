@@ -1,0 +1,26 @@
+Teoría: Conceptos Básicos de Random Forest
+
+¿Qué son los Random Forest?
+
+    Son modelos de Machine Learning que combinan múltiples árboles de decisión. 
+    Cada árbol se entrena con una muestra aleatoria del conjunto de datos y 
+    usa un subconjunto aleatorio de características al dividir los nodos. 
+    Las predicciones se toman como el promedio (para regresión) o la mayoría de 
+    las votaciones (para clasificación) de los árboles individuales.
+
+¿Por Qué Usarlos?
+
+   - Reducción de Varianza: Al promediar múltiples árboles, se reduce el riesgo de sobreajuste.
+
+   - Manejo de Datos Faltantes: Tolerantes a datos faltantes y ruido.
+
+   - Interpretabilidad: Se puede medir la importancia de las características.
+
+¿Cómo Funcionan?
+
+   - Bolsas de Muestras: Se crean múltiples subconjuntos de datos mediante muestreo con reemplazo (bootstrap).
+
+   - Construcción de Árboles: Cada árbol se entrena en un subconjunto de datos. Al dividir cada nodo, 
+     solo se considera un subconjunto aleatorio de características.
+
+   - Almacenamiento: Las predicciones se combinan para tomar una decisión final.
