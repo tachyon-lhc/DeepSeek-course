@@ -1,0 +1,26 @@
+Teoría: Conceptos Básicos de Selección de Características
+
+    ¿Por qué es importante?
+
+        - Reduce la dimensionalidad de los datos, evitando el problema de la maldición de la dimensionalidad.
+
+        - Aumenta la interpretabilidad del modelo.
+
+        - Mejora el rendimiento del modelo al eliminar features irrelevantes o redundantes.
+
+    Métodos de Selección:
+
+        1. Básados en Filtrado:
+
+            Evalúan las estadísticas de cada feature de forma independiente.
+            Ejemplo: chi^2, correlación.
+
+        2. Básados en Envoltura:
+
+            Usan un modelo para seleccionar features con base en el rendimiento.
+            Ejemplo: Recursive Feature Elimination (RFE).
+
+        3. Básados en Embedding:
+
+            Integrados en el algoritmo de entrenamiento.
+            Ejemplo: Lasso para selección embebida.
